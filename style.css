@@ -1,0 +1,164 @@
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f3f5f2;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+}
+
+.tarjeta {
+  width: 100%;
+  max-width: 575px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 42px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin: 0 0 28px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  color: #222;
+}
+
+/* ===== Estilos de formulario ===== */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 17px;
+  border: 1px solid #dcdfdb;
+  border-radius: 8px;
+  outline: none;
+  color: #222;
+  background: #fff;
+}
+
+input::placeholder {
+  color: #777;
+}
+
+input:focus {
+  border-color: #3f6f63;
+  box-shadow: 0 0 0 3px rgba(63, 111, 99, 0.18);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+#btn-agregar {
+  align-self: flex-start;
+  padding: 12px 22px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  background: #3f6f63;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+#btn-agregar:hover {
+  background: #325a50;
+}
+
+/* ===== Estilos de contactos ===== */
+.buscador {
+  margin-bottom: 18px;
+}
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 4px;
+  border-bottom: 1px solid #eceeeb;
+}
+
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.contacto-nombre {
+  font-weight: 700;
+  font-size: 17px;
+  word-break: break-word;
+}
+
+.contacto-telefono {
+  font-size: 15px;
+  color: #666;
+}
+
+.btn-eliminar {
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #a33a3a;
+  background: #fff;
+  border: 1px solid #e3c4c4;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.btn-eliminar:hover {
+  background: #fbeeee;
+}
+
+.vacio {
+  text-align: center;
+  color: #777;
+  font-size: 17px;
+  margin: 36px 0;
+}
+
+.vacio.oculto {
+  display: none;
+}
+
+.pie {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid #e6e8e5;
+}
+
+#contador {
+  margin: 0;
+  font-weight: 700;
+  color: #666;
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .tarjeta {
+    padding: 28px 20px;
+  }
+}
